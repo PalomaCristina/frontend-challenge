@@ -6,11 +6,3 @@ body {
     margin: 0; 
     font-family: Roboto, "Helvetica Neue", sans-serif; 
 }
-
-@import "@angular/material/theme";
-
-@include mat-core();
-
-$my-app-primary: mat-pallete($mat-orange);
-$my-app-accent: mat-pallete($mat-pink);
-$my-app-warn: mat-pallete($mat-red);
