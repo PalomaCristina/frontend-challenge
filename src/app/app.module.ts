@@ -15,6 +15,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { CardSearchComponent } from './components/card-search/card-search.component';
+import { SelectBenefictsComponent } from './components/select-beneficts/select-beneficts.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,6 +25,7 @@ import { CardSearchComponent } from './components/card-search/card-search.compon
     ContainerComponent,
     HomeComponent,
     CardSearchComponent,
+    SelectBenefictsComponent,
   ],
   imports: [
     BrowserModule,

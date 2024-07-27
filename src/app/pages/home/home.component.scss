@@ -1,0 +1,17 @@
+.card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 16px;
+    margin-bottom: 40px;
+}
+.card-benefits {
+    display: flex;
+    grid-template-columns: auto;
+    box-sizing: border-box;
+    justify-content: space-around;
+    row-gap: 10px;
+    gap: 10px;
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
