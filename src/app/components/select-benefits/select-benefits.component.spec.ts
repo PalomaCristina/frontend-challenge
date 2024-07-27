@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SelectBenefictsComponent } from './select-beneficts.component';
+import { SelectBenefictsComponent } from './select-benefits.component';
 
 describe('SelectBenefictsComponent', () => {
   let component: SelectBenefictsComponent;
