@@ -1,9 +1,19 @@
-.example-spacer {
-    flex: 1 1 auto;
-}
-.toolbar {
+mat-toolbar {
     background-color: #ff6200;
-}
-.logo {
+    .spacer {
+        flex: 1 1 auto;
+    }
+    .logo {
     width: 50px;
+    }
+    .mat-mdc-button:not(:disabled) {
+    color: #fafafa
+    }
+    .mat-mdc-outlined-button:not(:disabled) {
+    color: #fafafa;
+    border-color: #fafafa;
+    }
+    .example-container mat-form-field + mat-form-field {
+    margin-left: 8px;
+    }
 }
