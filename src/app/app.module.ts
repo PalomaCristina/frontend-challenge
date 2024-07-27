@@ -12,6 +12,9 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { ContainerComponent } from './components/container/container.component';
 import { HomeComponent } from './pages/home/home.component';
+import { MatIconModule } from '@angular/material/icon';
+import { MatCardModule } from '@angular/material/card';
+import { CardSearchComponent } from './components/card-search/card-search.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,6 +23,7 @@ import { HomeComponent } from './pages/home/home.component';
     CardComponent,
     ContainerComponent,
     HomeComponent,
+    CardSearchComponent,
   ],
   imports: [
     BrowserModule,
@@ -27,8 +31,8 @@ import { HomeComponent } from './pages/home/home.component';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatButtonModule,
-    MatFormFieldModule,
-    MatInputModule
+    MatIconModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
