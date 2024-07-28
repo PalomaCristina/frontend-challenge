@@ -1,11 +1,14 @@
-<mat-card class="card-search">
-    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+<div class="cards-container">
+  <mat-card class="card-search" *ngFor="let item of items">
+    <img mat-card-image [src]="item.picture" [alt]="item.title">
     <mat-card-content>
-    <ul>
-        <li>R$</li>
-    </ul>
+      <ul>
+        <li>{{ item.title }}</li>
+        <li>R$ {{ item.price.amount }}</li>
+      </ul>
     </mat-card-content>
     <mat-card-actions>
-      <button mat-flat-button>pedir cartão</button>
+      <button mat-flat-button>aproveitar cashback</button>
     </mat-card-actions>
   </mat-card>
+</div>

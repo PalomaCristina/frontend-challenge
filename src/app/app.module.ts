@@ -8,14 +8,13 @@ import { CardComponent } from './components/card/card.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatInputModule } from '@angular/material/input';
 import { ContainerComponent } from './components/container/container.component';
 import { HomeComponent } from './pages/home/home.component';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { CardSearchComponent } from './components/card-search/card-search.component';
-import { SelectBenefictsComponent } from './components/select-benefits/select-benefits.component';
+import { SelectBenefitsComponent } from './components/select-benefits/select-benefits.component';
+import { HttpClientModule } from '@angular/common/http'; 
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +24,7 @@ import { SelectBenefictsComponent } from './components/select-benefits/select-be
     ContainerComponent,
     HomeComponent,
     CardSearchComponent,
-    SelectBenefictsComponent,
+    SelectBenefitsComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,7 +33,8 @@ import { SelectBenefictsComponent } from './components/select-benefits/select-be
     MatToolbarModule,
     MatButtonModule,
     MatIconModule,
-    MatCardModule
+    MatCardModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
