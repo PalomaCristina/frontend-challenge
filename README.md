@@ -36,7 +36,7 @@ A aplicação estará disponível em http://localhost:4200 por padrão.
 
 O projeto está hospedado na Vercel e pode ser acessado através do seguinte link:
 
-uniclass-chlg.vercel.app
+[uniclass-chlg.vercel.app](https://uniclass-chlg.vercel.app/)
 
 ### Funcionalidades
 
