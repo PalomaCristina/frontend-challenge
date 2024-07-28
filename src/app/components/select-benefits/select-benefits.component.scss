@@ -1,18 +1,40 @@
-.select-benefits {
+.select-benefits-wrapper {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch; /* Suporte para scroll suave em dispositivos móveis */
+  }
+  
+  .select-benefit-container {
+    flex: 0 0 auto;
+    margin-right: 10px; /* Espaço entre os cartões */
+  }
+  
+  .select-benefits {
     display: flex;
     flex-direction: column;
-    padding: 16px;
+    padding: 0 0 16px;
     width: 150px;
     height: 150px;
     max-width: 400px;
     margin-bottom: 10px;
-    
-    .mat-mdc-card-content {
-        margin-top: 15px;
-        padding: 10px;
-    }
-    h2 {
-        font-size: 16px;
-        color: #56504C;
-    }
-}
+    border-radius: 10px;
+    align-items: flex-start;
+  }
+  
+  img {
+    width: 30px;
+    height: 40px;
+  }
+  
+  .mat-mdc-card-content {
+    margin-top: 15px;
+    padding: 10px;
+  }
+  
+  h2 {
+    font-size: 16px;
+    color: #56504c;
+  }
+  

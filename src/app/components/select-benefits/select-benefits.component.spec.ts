@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SelectBenefictsComponent } from './select-benefits.component';
+import { SelectBenefitsComponent } from './select-benefits.component';
 
-describe('SelectBenefictsComponent', () => {
-  let component: SelectBenefictsComponent;
-  let fixture: ComponentFixture<SelectBenefictsComponent>;
+describe('SelectBenefitsComponent', () => {
+  let component: SelectBenefitsComponent;
+  let fixture: ComponentFixture<SelectBenefitsComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [SelectBenefictsComponent]
+      declarations: [SelectBenefitsComponent]
     });
-    fixture = TestBed.createComponent(SelectBenefictsComponent);
+    fixture = TestBed.createComponent(SelectBenefitsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

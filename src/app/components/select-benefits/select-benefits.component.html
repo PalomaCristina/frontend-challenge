@@ -1,8 +1,10 @@
-<mat-card class="select-benefits">
+<div *ngFor="let benefit of benefits" class="select-benefit-container">
+  <mat-card class="select-benefits">
     <mat-card-header>
-        <mat-icon color="#ff6200" aria-hidden="false" label="Example home icon" href="../../../assets/images/categorias-icon-compras.svg"></mat-icon>
+      <img [src]="benefit.icon" alt="Benefit icon">
     </mat-card-header>
     <mat-card-content>
-        <h2>Cartões sem anuidade</h2>
+      <h2>{{ benefit.text }}</h2>
     </mat-card-content>
   </mat-card>
+</div>
