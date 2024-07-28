@@ -7,11 +7,22 @@
 }
 .card-benefits {
     display: flex;
-    grid-template-columns: auto;
-    box-sizing: border-box;
-    justify-content: space-around;
-    row-gap: 10px;
-    gap: 10px;
-    margin-bottom: 60px;
-    margin-top: 60px;
+    flex-wrap: wrap; /* Se você quiser que os itens possam quebrar para a próxima linha */
+    justify-content: space-between; /* Alinha os itens à direita */
+    row-gap: 16px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 32px;
+    color: #231D19;
+    ;
+}
+h1 {
+    color: #093C71;
+    font-weight: 300;
+    font-size: 16px;
+    text-align: center;
 }

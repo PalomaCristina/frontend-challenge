@@ -1,27 +1,26 @@
-.select-benefits-wrapper {
+.benefit-container-master {
     display: flex;
-    overflow-x: auto;
-    padding: 10px;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch; /* Suporte para scroll suave em dispositivos móveis */
-  }
-  
-  .select-benefit-container {
-    flex: 0 0 auto;
-    margin-right: 10px; /* Espaço entre os cartões */
-  }
-  
-  .select-benefits {
-    display: flex;
-    flex-direction: column;
+    justify-content: flex-start; /* Alinha os itens à direita */
+    flex-direction: row; /* Certifique-se de que a direção dos itens esteja correta */
     padding: 0 0 16px;
-    width: 150px;
-    height: 150px;
-    max-width: 400px;
     margin-bottom: 10px;
     border-radius: 10px;
-    align-items: flex-start;
+}
+
+// .select-benefits-wrapper {
+//     padding: 10px;
+//     scroll-behavior: smooth;
+//     -webkit-overflow-scrolling: touch; /* Suporte para scroll suave em dispositivos móveis */
+
+// }
+  
+  .select-benefit-container {
+    width: 150px;
+    height: 150px;
+    flex: 0 0 auto;
+    margin-right: 30px; 
   }
+  
   
   img {
     width: 30px;
@@ -37,4 +36,3 @@
     font-size: 16px;
     color: #56504c;
   }
-  
