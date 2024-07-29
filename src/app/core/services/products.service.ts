@@ -25,22 +25,36 @@ listar(query: string = 'iphone'): Observable<Promocao[]> {
       })
     );
 }
-private extractCategories(response: any): string[] {
-  return response.available_filters.find((filter: any) => filter.id === 'category').values.map((category: any) => category.name);
-}
 
 private transformItem(item: any): Promocao {
+  const priceAmount = this.formatCurrency(Math.floor(item.price * 100));
+
+  // Remover todos os caracteres não numéricos exceto o ponto decimal
+  const numericPriceAmount = priceAmount.replace(/[^0-9,-]+/g, '').replace(',', '.');
+  const parsedPriceAmount = parseFloat(numericPriceAmount);
+  const cashback = parsedPriceAmount * 0.10;
+  
   return {
     id: item.id,
     title: item.title,
     price: {
       currency: item.currency_id,
-      amount: Math.floor(item.price),
-      decimals: (item.price % 1).toFixed(2)
+      amount: priceAmount,
+      cashback: (cashback).toFixed(2)
     },
     picture: item.thumbnail,
     condition: item.condition,
     free_shipping: item.shipping.free_shipping
   };
+}
+private formatCurrency(value: number): string {
+  const priceInReais = value / 100;
+
+  const integerPart = Math.floor(priceInReais).toString().slice(0, 4);
+  const decimalPart = priceInReais.toFixed(2).split('.')[1]; 
+
+  const limitedPrice = parseFloat(`${integerPart}.${decimalPart}`);
+
+  return limitedPrice.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
 }
 }

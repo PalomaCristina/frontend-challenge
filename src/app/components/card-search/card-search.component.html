@@ -3,8 +3,11 @@
     <img mat-card-image [src]="item.picture" [alt]="item.title">
     <mat-card-content>
       <ul>
-        <li>{{ item.title }}</li>
-        <li>R$ {{ item.price.amount }}</li>
+        <li class="title">{{ item.title }}</li>
+        <li class="price">{{ item.price.amount }}</li>
+        <div class="container-cashback">
+          <li class="cashback">R${{ item.price.cashback }} de cashback</li>
+        </div>
       </ul>
     </mat-card-content>
     <mat-card-actions>

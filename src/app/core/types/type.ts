@@ -3,8 +3,8 @@ export interface Promocao {
     title: string;
     price: {
         currency: string;
-        amount: number;
-        decimals: string;
+        amount: string;
+        cashback: string;
     };
     picture: string;
     condition: string;

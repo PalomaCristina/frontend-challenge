@@ -6,15 +6,24 @@
   .card-search {
     display: flex;
     flex-direction: column;
-    max-width: 250px;
-    max-height: 400px;
+    max-width: 270px;
+    max-height: 600px;
     background-color: #fff;
     border-radius: 8px;
     padding: 10px;
     margin: 16px;
-    flex: 0 0 auto; /* Não permitir que o card encolha */
+    flex: 0 0 auto;
+
   }
-  
+  .container-cashback {
+    background-color: rgba(253, 100, 5, 0.308);
+    border-radius: 10px; 
+    padding: 4px; 
+    display: inline-block;
+    margin: 0 auto;
+    margin-bottom: 12px;
+  }
+
   .card-search img {
     width: 100%;
     height: 100%;
@@ -24,17 +33,32 @@
   .card-search ul {
     list-style: none;
     padding: 0;
+    text-align: center;
+
   }
-  
-  .card-search li {
+  .price {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    
+  }
+  .title {
     margin: 12px;
     font-weight: 400;
     font-size: 12px;
+  }
+ 
+  .cashback {
+    font-weight: 400;
+    font-size: 10px;
+  }
+  .card-search li {
     line-height: 15px;
     color: #1D1B20;
     text-align: center;
+    align-items: center;
   }
-  
   .card-search button {
     width: 100%;
     height: 48px;
